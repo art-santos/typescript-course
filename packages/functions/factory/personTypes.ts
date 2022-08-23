@@ -59,7 +59,7 @@ type TDataRegistered = {
   date: string
 }
 
-type TData = {
+export type TData = {
   cell: string
   dob: TDataDob
   email: string
@@ -72,8 +72,10 @@ type TData = {
   phone: string
   picture: TDataPicture
   registered: TDataRegistered
+  lenght: void
 }
 
 export type TDataRandomPersonGenerator = {
+  [x: string]: any
   [key:number]:TData
 }
